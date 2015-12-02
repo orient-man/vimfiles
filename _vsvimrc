@@ -1,0 +1,20 @@
+set hlsearch
+set vsvim_useeditordefaults
+set backspace=indent,eol,start
+
+"default is "\"
+let mapleader=","
+
+" clear out a search
+nnoremap <Leader><space> :noh<cr>
+
+nnoremap <kPlus> <C-a>
+nnoremap <kMinus> <C-x>
+
+"http://vim.wikia.com/wiki/Moving_lines_up_or_down
+nnoremap <M-j> :m .+1<CR>
+nnoremap <M-k> :m .-2<CR>==
+inoremap <M-j> <Esc>:m .+1<CR>
+inoremap <M-k> <Esc>:m .-2<CR>==gi
+vnoremap <M-j> :m '>+1<CR>
+vnoremap <M-k> :m '<-2<CR>gv=gv

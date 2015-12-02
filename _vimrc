@@ -1,4 +1,4 @@
-﻿set nocompatible                  " just in case system-wide vimrc has set this otherwise
+set nocompatible                  " just in case system-wide vimrc has set this otherwise
 set hlsearch                      " highlight search strings
 set incsearch                     " incremental search ("find as you type")
 set ignorecase                    " ignore case when searching
@@ -149,6 +149,7 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+let g:airline_symbols.whitespace = 'Ξ'
 
 " tabs & indentation
 set tabstop=4                     " spaces per tab

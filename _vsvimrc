@@ -18,3 +18,7 @@ inoremap <M-j> <Esc>:m .+1<CR>
 inoremap <M-k> <Esc>:m .-2<CR>==gi
 vnoremap <M-j> :m '>+1<CR>
 vnoremap <M-k> :m '<-2<CR>gv=gv
+
+" Movement by screen line
+nnoremap j gj
+nnoremap k gk

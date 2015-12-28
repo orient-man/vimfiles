@@ -41,8 +41,6 @@ nnoremap <leader><space> :noh<cr>
 "map <F4> :set nohls!<CR>:set nohls?<CR>
 nnoremap <silent> <C-l> :<C-u>nohls<CR><C-l>
 
-" Firstly, the <Esc> key for leaving insert mode is, in my opinion, rather antiquated...
-inoremap jk <ESC>
 " repeating in Visual Mode
 vnoremap . :norm.<CR>
 

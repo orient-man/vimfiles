@@ -19,9 +19,9 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
-[submodule ".\\bundle\\vim-fsharp"]
-	path = .\\bundle\\vim-fsharp
+[submodule "bundle/vim-fsharp"]
+	path = bundle/vim-fsharp
 	url = https://github.com/fsharp/vim-fsharp
-[submodule ".\\bundle\\vim-fontsize"]
-	path = .\\bundle\\vim-fontsize
+[submodule "bundle/vim-fontsize"]
+	path = bundle/vim-fontsize
 	url = https://github.com/drmikehenry/vim-fontsize

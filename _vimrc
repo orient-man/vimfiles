@@ -106,6 +106,11 @@ if !has("unix")
     nnoremap <kPlus> <C-a>
     nnoremap <kMinus> <C-x>
 
+    nmap <silent> <F8>                        <Plug>FontsizeBegin
+    nmap <silent> <SID>DisableFontsizeInc     <Plug>FontsizeInc
+    nmap <silent> <SID>DisableFontsizeDec     <Plug>FontsizeDec
+    nmap <silent> <SID>DisableFontsizeDefault <Plug>FontsizeDefault
+
     "http://vim.wikia.com/wiki/Remove_swap_and_backup_files_from_your_working_directory
     set backupdir=$TEMP,$TMP,.
     set directory=$TEMP,$TMP,.
@@ -134,6 +139,7 @@ if !has("unix")
 endif
 
 let g:airline_theme='powerlineish'
+"let g:airline_theme='solarized'
 
 if has("unix") || has("gui")
     let g:airline_powerline_fonts=0

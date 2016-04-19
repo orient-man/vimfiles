@@ -25,3 +25,6 @@
 [submodule "bundle/vim-fontsize"]
 	path = bundle/vim-fontsize
 	url = https://github.com/drmikehenry/vim-fontsize
+[submodule "bundle/vim-ps1"]
+	path = bundle/vim-ps1
+	url = https://github.com/PProvost/vim-ps1.git

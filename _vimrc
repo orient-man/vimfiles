@@ -26,7 +26,7 @@ endif
 set background=dark
 "colors solarized
 "colors noctu
-colors mustang
+"colors mustang
 
 set encoding=utf-8
 setglobal fileencoding=utf-8
@@ -138,7 +138,8 @@ if !has("unix")
     endif
 endif
 
-let g:airline_theme='powerlineish'
+"let g:airline_theme='powerlineish'
+let g:airline_theme='gruvbox'
 "let g:airline_theme='solarized'
 
 if has("unix") || has("gui")
@@ -404,3 +405,6 @@ if exists("&colorcolumn")
 endif
 
 call pathogen#infect()
+
+let g:gruvbox_bold=0
+colors gruvbox

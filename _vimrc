@@ -404,6 +404,15 @@ if exists("&colorcolumn")
     let &colorcolumn="80,".join(range(120,999),",")
 endif
 
+" F#
+au FileType fsharp call FileType_FSharp()
+
+function! FileType_FSharp()
+    nnoremap <M-'> :<C-u>call fsharpbinding#python#FsiSendLine()<cr>
+    vnoremap <M-'> :<C-u>call fsharpbinding#python#FsiSendSel()<cr>
+    vnoremap <M-/> :<C-u>call fsharpbinding#python#FsiSendSel()<cr>
+endfunction
+
 call pathogen#infect()
 
 let g:gruvbox_bold=0

@@ -408,9 +408,15 @@ endif
 au FileType fsharp call FileType_FSharp()
 
 function! FileType_FSharp()
-    nnoremap <M-'> :<C-u>call fsharpbinding#python#FsiSendLine()<cr>
-    vnoremap <M-'> :<C-u>call fsharpbinding#python#FsiSendSel()<cr>
-    vnoremap <M-/> :<C-u>call fsharpbinding#python#FsiSendSel()<cr>
+    if has("unix")
+        nnoremap ĺ :<C-u>call fsharpbinding#python#FsiSendLine()<cr>
+        vnoremap ĺ :<C-u>call fsharpbinding#python#FsiSendSel()<cr>
+        vnoremap ÷ :<C-u>call fsharpbinding#python#FsiSendSel()<cr>
+    else
+        nnoremap <M-'> :<C-u>call fsharpbinding#python#FsiSendLine()<cr>
+        vnoremap <M-'> :<C-u>call fsharpbinding#python#FsiSendSel()<cr>
+        vnoremap <M-/> :<C-u>call fsharpbinding#python#FsiSendSel()<cr>
+    endif
 endfunction
 
 call pathogen#infect()

@@ -11,6 +11,7 @@ set hidden                        " allows you to hide buffers with unsaved chan
 set history=1000                  " longer search and command history (default is 20)
 set wildmode=longest,list         " bash like autocompletion
 set langmenu=en_US                " no Polish menu in UTF-8 on Windows
+set fixeol!                       " preserve missing end-of-line at end of text files
 
 syntax on
 filetype plugin indent on

@@ -424,3 +424,5 @@ call pathogen#infect()
 
 let g:gruvbox_bold=0
 colors gruvbox
+
+let g:rainbow_active = 1

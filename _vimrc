@@ -47,7 +47,9 @@ vnoremap . :norm.<CR>
 
 if has("gui_macvim")
     set transparency=2
-    set gfn=Menlo\ Regular\ for\ Powerline:h15
+    "set gfn=Menlo\ Regular\ for\ Powerline:h15
+    set macligatures
+    set guifont=Fira\ Code:h15
 
     "Switching tabs
     map <D-S-]> gt

@@ -399,8 +399,6 @@ endif
 
 set ww=h,l,<,>,[,]                " allow h/l/left/right to cross line boundaries
 
-let g:NumberToggleTrigger="<F4>"
-
 if exists("&colorcolumn")
     "set colorcolumn=85
     let &colorcolumn=join(range(85,999),",")

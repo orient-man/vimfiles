@@ -373,7 +373,7 @@ nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
 
 " bufexplorer
-"map <F4> :BufExplorer<CR>
+map <F4> :BufExplorer<CR>
 
 " Easy Expansion of the Active File Directory
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'

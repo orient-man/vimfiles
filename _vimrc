@@ -398,7 +398,7 @@ map <leader>t :TlistToggle<CR>
 map <C-F12> :silent !ctags -R --sort=yes --exclude="bin" --extra=+fq --fields=+ianmzS --c\#-kinds=cimnp
 
 "eslint
-let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_checkers = ['eslint', 'jshint']
 
 if !exists(":DiffOrig")
     command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis

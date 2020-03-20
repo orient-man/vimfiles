@@ -1,1 +1,4 @@
+.ionide
+.metals
+bundle/vim_fsharp_languageclient
 doc/tags*

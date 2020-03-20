@@ -16,9 +16,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
-[submodule "bundle/vim-fsharp"]
-	path = bundle/vim-fsharp
-	url = https://github.com/fsharp/vim-fsharp
 [submodule "bundle/vim-fontsize"]
 	path = bundle/vim-fontsize
 	url = https://github.com/drmikehenry/vim-fontsize
@@ -37,3 +34,9 @@
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = https://github.com/jlanzarotta/bufexplorer
+[submodule "bundle/Ionide-vim"]
+	path = bundle/Ionide-vim
+	url = https://github.com/ionide/Ionide-vim
+[submodule "bundle/LanguageClient-neovim"]
+	path = bundle/LanguageClient-neovim
+	url = https://github.com/autozimu/LanguageClient-neovim

@@ -49,7 +49,8 @@ if has("gui_macvim")
     set transparency=2
     "set gfn=Menlo\ Regular\ for\ Powerline:h15
     set macligatures
-    set guifont=Fira\ Code:h15
+    "set guifont=Fira\ Code:h15
+    set guifont=JetBrains\ Mono:h15
 
     "Switching tabs
     map <D-S-]> gt
@@ -254,7 +255,7 @@ if has("autocmd")
     function! RunPython()
         execute ':!python ' . expand('%:p')
     endfunction
-    command! -complete=command RunPython call RunPython()
+    command! -complete=command -nargs=? RunPython call RunPython()
     autocmd FileType python :map <D-r> :RunPython<CR>
 endif
 
@@ -305,12 +306,12 @@ if has("gui_macvim")
     function! XcodeClean()
         silent execute ':!osascript -e "tell application \"Xcode\"" -e "Clean" -e "end tell"'
     endfunction
-    command! -complete=command XcodeClean call XcodeClean()
+    command! -complete=command -nargs=? XcodeClean call XcodeClean()
 
     function! XcodeDebug()
         silent execute '!osascript -e "tell application \"Xcode\"" -e "Debug" -e "end tell"'
     endfunction
-    command! -complete=command XcodeDebug call XcodeDebug()
+    command! -complete=command -nargs=? XcodeDebug call XcodeDebug()
 
     " Command-K cleans the project
     :noremap <D-k> :XcodeClean<CR>

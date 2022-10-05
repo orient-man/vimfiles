@@ -37,6 +37,3 @@
 [submodule "bundle/Ionide-vim"]
 	path = bundle/Ionide-vim
 	url = https://github.com/ionide/Ionide-vim
-[submodule "bundle/LanguageClient-neovim"]
-	path = bundle/LanguageClient-neovim
-	url = https://github.com/autozimu/LanguageClient-neovim
